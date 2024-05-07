@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-""" import async module and a function waut_random"""
+""" import async module and a function wait_random"""
 
 import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
@@ -15,9 +15,8 @@ async def wait_n(n: int, max_delay: int) -> float:
 
         max_delay (int): The maximum delay
 
-    Retturns:
-        float: a list of floats
-
+    Returns:
+        List[float]: a list of floats
     """
     delays = []
     for i in range(n):
@@ -27,4 +26,4 @@ async def wait_n(n: int, max_delay: int) -> float:
             j -= 1
         delays.insert(j, delay)
 
-    return (delays)
+    return delays
