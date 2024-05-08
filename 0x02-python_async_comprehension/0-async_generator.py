@@ -13,5 +13,5 @@ async def async_generator() -> float:
         random number between 0 and 10
     """
     for i in range(10):
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(1)
         yield random.choice(range(0, 10))
